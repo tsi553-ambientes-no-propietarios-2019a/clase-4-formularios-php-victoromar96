@@ -1,4 +1,4 @@
-<?php
+<?php include('validarRegistro.php'); 
 
 /**
  * Problema Propuesto:
@@ -11,3 +11,36 @@
  * "Las contrseñas no coinciden".
  */
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Ejercicio4
+	</title>
+</head>
+<body>
+
+	<form method="post">
+	<div>
+		<label>Usuario: </label>
+		<input type="text"  name="user" required="required">
+	</div>
+	<div>
+		<label> Confirmar Usuario: </label>
+		<input type="text"  name="user2" required="required">
+	</div>
+	<div>
+		<label>Password: </label>
+		<input type="password" name="pass" required="required">
+	</div>
+	<div>
+		<label> Confirmar Pass: </label>
+		<input type="password" name="pass2" required="required">
+	</div>
+
+	<button name="guardar">Guardar</button>
+</form>
+
+</body>
+</html>
